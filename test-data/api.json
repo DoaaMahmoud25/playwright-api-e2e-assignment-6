@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "testName": "Valid Account",
+      "userEmail": "doaam.pag@gmail.com",
+      "userPassword": "Pass12345",
+      "validity": "valid"
+    },
+    {
+      "testName": "Wrong Password",
+      "userEmail": "doaam.pag@gmail.com",
+      "userPassword": "wrong-pass",
+      "validity": "invalid",
+      "expectedMessage": "Incorrect email or password."
+    },
+    {
+      "testName": "Unregistered Email",
+      "userEmail": "not-a-user@gmail.com",
+      "userPassword": "Test1234!!",
+      "validity": "invalid",
+      "expectedMessage": "Incorrect email or password."
+    }
+  ],
+  "products": [
+    { "name": "ZARA COAT 3", "exists": true },
+    { "name": "IPHONE 13 PRO", "exists": true },
+    { "name": "FAKE PRODUCT", "exists": false }
+  ]
+}

@@ -1,4 +1,4 @@
-name: handle Api 
+name: API -e2e Tests
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run API Tests
-        run: npx playwright test tests/api.spec.ts --reporter=html
+        run: npx playwright test tests/handleApi.spec.ts --reporter=html
 
       - name: Upload API Test Report
         uses: actions/upload-artifact@v4
